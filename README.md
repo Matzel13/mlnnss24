@@ -22,7 +22,7 @@ Dieser Schritt initialisiert die lokale Kopie des Repositories und lädt alle Da
 Server runter. Dazu muss man das folgende Kommando ausführen:
 
 ```
-git clone git@github.com:kjuen/mlnn.git
+git clone https://github.com/kjuen/mlnnss24.git
 ```
 
 ### Status des Repositories
