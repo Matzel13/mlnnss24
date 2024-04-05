@@ -15,6 +15,18 @@ Matlab-Code und Daten für die Vorlesung 'Maschinelles Lernen und Neuronale Netz
   * Kapitel 8: Faltungsnetze
   * Kapitel 9: Physics Informed Neural Networks (PINN)
 
+## Matlab
+
+Benötigtes Setup:
+
+  * Matlab R2023 (a oder b)
+  * Deep Learning Toolbox
+  * Image Processing Toolbox
+  * Statistics and Machine Learning Toolbox
+  * optional: Parallel Computing Toolbox
+
+
+
 ## Git
 
 ### Das Repository clonen
