@@ -64,7 +64,7 @@ fprintf("Trainingsfehler: %.1f%%\n", trainErr*100);
 
 
 %% Testen mit weiterem Datensatz
-dateiName = fullfile('..', 'Datensaetze', 'penguins_test.csv');
+dateiName = fullfile('..', 'Daten', 'penguins_test.csv');
 Ttest = readtable(dateiName);
 disp(head(Ttest));
 testMat = [Ttest.bill_length_mm, Ttest.flipper_length_mm];
