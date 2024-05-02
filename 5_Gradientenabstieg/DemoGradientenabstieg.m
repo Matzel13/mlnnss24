@@ -38,13 +38,13 @@ plot3([w0(1), track(1,:)], [w0(2), track(2,:)], Eeinfach, 'r-');
 
 hold off;
 
-%% 5.  Verlauf der Energie- (oder Kosten-) funktion
+%% 3.  Verlauf der Energie- (oder Kosten-) funktion
 f2 = figure;
 plot(0:nIts, Eeinfach);
 xlabel('Iteration'), ylabel('Energie'), 
 title('Verlauf der Energiefunktion');
 
-%% 3. NAG-Momentum-Methode
+%% 4. NAG-Momentum-Methode
 gamma = 0.9;
 eta = 0.6;
 [w, track] = gaNAG(gradE2D, eta, w0, nIts, gamma);
@@ -60,7 +60,7 @@ plot([w0(1), track(1,:)], [w0(2), track(2,:)],'c-');
 plot3([w0(1), track(1,:)], [w0(2), track(2,:)], Enag, 'c-');
 hold off;
 
-%% 4. RMS-Prop
+%% 5. RMS-Prop
 beta = 0.9;
 eta = 0.6;
 [w, track] = gaRmsProp(gradE2D, eta, w0, nIts, beta);
@@ -76,7 +76,7 @@ plot([w0(1), track(1,:)], [w0(2), track(2,:)],'m-');
 plot3([w0(1), track(1,:)], [w0(2), track(2,:)], Ermsp, 'm-');
 hold off;
 
-%% 5. Vergleich: Verlauf der Kostenfunktion
+%% 6. Vergleich: Verlauf der Kostenfunktion
 figure;
 plot(0:nIts, Eeinfach, 0:nIts, Enag, 0:nIts, Ermsp);
 xlabel('Iteration'), ylabel('Energie'), 
