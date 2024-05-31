@@ -36,7 +36,7 @@ net = trainNetwork(xySpiral, lblSpiral, layers, options);
 toc
 lblPred = classify(net, xySpiral);
 errTrain = mean(lblPred ~= lblSpiral);
-fprintf('Fehler = %.2f%%, #Parameter = %i\n', 100*errTrain, nParamsVVNN(net));
+fprintf('Fehler = %.2f%%\n', 100*errTrain);
 %% Klassifizierungsregionen
 nGrid = 100;
 [Xg,Yg] = meshgrid(linspace(xdim(1), xdim(2), nGrid), ...
